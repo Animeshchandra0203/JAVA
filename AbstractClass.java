@@ -1,16 +1,16 @@
 abstract class Person {
-    abstract void setname(String s);
+    String name;
+     void setName(String name){
+        this.name = name;
+     }
     abstract void setRequirements();
     abstract void display();
 }
 
 class Student extends Person {
-    String name;
     int studclass, roll;
     char sec;
-    void setname(String name){
-        this.name = name;
-    }
+   
     void setRequirements(){
         this.studclass = 12;
         this.sec = 'A';
@@ -26,11 +26,8 @@ class Student extends Person {
 }
 
 class Employee extends Person {
-    String name;
     float empSalary;
-    void setname(String name){
-        this.name = name;
-    }
+
     void setRequirements(){
         this.empSalary = 60000;
     }
@@ -46,7 +43,7 @@ public class AbstractClass{
         
         // Student object
         Person s1 = new Student();
-        s1.setname("Animesh");
+        s1.setName("Animesh");
         s1.setRequirements();
         System.out.println("Displaying the data of the Student:");
         s1.display();
@@ -55,11 +52,14 @@ public class AbstractClass{
 
         // Employee object
         Person e1 = new Employee();
-        e1.setname("Rahul");
+        e1.setName("Rahul");
         e1.setRequirements();
         System.out.println("Displaying the Salary of Employee:");
         e1.display();
     }
 }
+
+
+
 
 
