@@ -49,13 +49,13 @@ public class TemperatureOfDays {
 
         String[][] temperature = new String[7][3];
 
-        temperature[0][0] = "Monday";
-        temperature[1][0] = "Tuesday";
-        temperature[2][0] = "Wednesday";
-        temperature[3][0] = "Thursday";
-        temperature[4][0] = "Friday";
-        temperature[5][0] = "Saturday";
-        temperature[6][0] = "Sunday";
+        temperature[0][0] = "Mon";
+        temperature[1][0] = "Tue";
+        temperature[2][0] = "Wed";
+        temperature[3][0] = "Thu";
+        temperature[4][0] = "Fri";
+        temperature[5][0] = "Sat";
+        temperature[6][0] = "Sun";
 
         TemperatureOfDays d1 = new TemperatureOfDays();
 
