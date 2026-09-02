@@ -12,7 +12,7 @@ class ThreadAlpha extends Thread{
   public void run(){
     for(int i=0;i<5;i++){
       ch = (char)(65+i);
-        System.out.println("the current thread is"+ Thread.currentThread().getName()+" -->  "+ ch);
+        System.out.println("the current thread is "+ Thread.currentThread().getName()+" --> "+ ch);
      }
    }
 }
@@ -24,6 +24,6 @@ public class FirstMultipleThread {
              
              t1.start();
              t2.start();
-         
+      
       }
 }
